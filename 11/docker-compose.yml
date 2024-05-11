@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: open_re
+    ports:
+      - "1011:80"
+    volumes:
+      - .:/var/www/html
